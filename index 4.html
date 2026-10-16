@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Phone - Tienda de Tecnología</title>
+  <style>
+    body { margin:0; font-family: 'Segoe UI', sans-serif; background:#f4f4f4; color:#333; }
+    .hero { background:linear-gradient(120deg,rgba(8,20,40,.88),rgba(20,70,120,.68)),url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1600&q=80'); background-size:cover; background-position:center; padding:55px 20px; }
+    .hero p { max-width:650px; margin:12px auto 0; }
+    .card img { width:100%; height:200px; object-fit:cover; display:block; }
+    .card { overflow:hidden; padding:16px; }
+    .card p { font-weight:600; }
+    .repair-card { padding:0 0 18px; overflow:hidden; }
+    .repair-card img { width:100%; height:170px; object-fit:cover; border-radius:8px 8px 0 0; }
+    .repair-card p { padding:0 12px; }
+    header { background:#0d0d0d; color:#fff; padding:20px; text-align:center; }
+    nav { background:#1a1a1a; display:flex; justify-content:center; gap:20px; padding:10px; }
+    nav a { color:#fff; text-decoration:none; font-weight:bold; }
+    section { padding:40px 20px; }
+    h2 { text-align:center; margin-bottom:20px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .card { background:#fff; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); padding:20px; text-align:center; }
+    .card img { max-width:100%; border-radius:8px; }
+    .card img { object-position:center; }
+    .card p { margin:14px 0 4px; font-weight:600; }
+    .hero h1 { font-size:clamp(2rem,5vw,3.2rem); margin:0; }
+    .hero p { text-align:center; }
+    section h2 { color:#173b63; }
+    nav a:hover { color:#70c7ff; }
+    .card { transition:transform .2s ease, box-shadow .2s ease; }
+    .card:hover { transform:translateY(-3px); box-shadow:0 8px 18px rgba(0,0,0,.14); }
+    @media(max-width:600px){ nav { gap:12px; } nav a { font-size:14px; } .grid { grid-template-columns:repeat(auto-fit,minmax(145px,1fr)); gap:12px; } .card img { height:155px; } }
+    img { background:#e9eef5; }
+    nav { flex-wrap:wrap; }
+    @media(max-width:600px){ .hero{padding:40px 18px;} section{padding:28px 14px;} .cart{position:absolute;top:10px;right:10px;padding:8px 12px;} }
+    .cart { position:fixed; top:20px; right:20px; background:#ff6600; color:#fff; padding:10px 20px; border-radius:20px; cursor:pointer; }
+    footer { background:#0d0d0d; color:#fff; text-align:center; padding:20px; margin-top:40px; }
+    .chat-box { border:1px solid #ccc; padding:15px; background:#fff; border-radius:10px; max-width:500px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Next Phone</h1>
+    <p>Tu tienda de tecnología con estilo moderno</p>
+    <p>Celulares, accesorios y soluciones para tu teléfono.</p>
+  </header>
+
+  <div class="cart">🛒 Carrito</div>
+
+  <nav>
+    <a href="#galeria">Galería</a>
+    <a href="#productos">Productos</a>
+    <a href="#reparaciones">Reparaciones</a>
+    <a href="#fundas">Fundas</a>
+    <a href="#accesorios">Accesorios</a>
+    <a href="#chat">Chat IA</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="galeria">
+    <h2>Galería de imágenes</h2>
+    <p style="text-align:center;max-width:760px;margin:0 auto 24px;">Explora algunas imágenes de nuestros celulares, reparaciones y accesorios.</p>
+    <div class="grid">
+      <div class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=700&q=85" alt="Celular moderno"><p>Celulares modernos</p></div>
+      <div class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1588508065123-287b28e013da?auto=format&fit=crop&w=700&q=85" alt="Herramientas para reparar teléfonos"><p>Servicio de reparación</p></div>
+      <div class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1603313011108-4dbaee88a4e?auto=format&fit=crop&w=700&q=85" alt="Funda protectora para celular"><p>Fundas protectoras</p></div>
+      <div class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1608156639585-b3a032ef9689?auto=format&fit=crop&w=700&q=85" alt="Audífonos para celular"><p>Audífonos y accesorios</p></div>
+    </div>
+  </section>
+
+  <section id="productos">
+    <h2>Marcas en Venta</h2>
+    <div class="grid">
+      <div class="card"><img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=700&q=85" alt="Teléfono iPhone de Apple"><p>iPhone</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=700&q=85" alt="Teléfono Samsung Galaxy"><p>Samsung Galaxy</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=85" alt="Teléfono Xiaomi"><p>Xiaomi</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=85" alt="Teléfono Alcatel"><p>Alcatel</p></div>
+    </div>
+  </section>
+
+  <section id="reparaciones">
+    <h2>Catálogo de Reparaciones</h2>
+    <div class="grid">
+      <div class="card repair-card"><img src="https://images.unsplash.com/photo-1588508065123-287b28e013da?auto=format&fit=crop&w=700&q=85" alt="Técnico cambiando la pantalla de un celular"><p>🔧 Cambio de Pantallas</p></div>
+      <div class="card repair-card"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=85" alt="Componentes electrónicos internos de un teléfono"><p>🔧 Reparaciones Internas</p></div>
+      <div class="card repair-card"><img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=700&q=85" alt="Teléfono móvil en servicio de reparación"><p>🔧 Reparaciones Externas</p></div>
+      <div class="card repair-card"><img src="https://images.unsplash.com/photo-1609592806596-b43bada5d7e8?auto=format&fit=crop&w=700&q=85" alt="Cargador y accesorios para teléfonos móviles"><p>🔧 Cargadores y Accesorios</p></div>
+    </div>
+  </section>
+
+  <section id="accesorios">
+    <h2>Accesorios para tu celular</h2>
+    <div class="grid">
+      <div class="card"><img src="https://images.unsplash.com/photo-1608156639585-b3a032ef9689?auto=format&fit=crop&w=700&q=85" alt="Audífonos inalámbricos"><p>Audífonos</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=700&q=85" alt="Audífonos y accesorios tecnológicos"><p>Audio y sonido</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1609592806596-b43bada5d7e8?auto=format&fit=crop&w=700&q=85" alt="Cargador para celular"><p>Cargadores</p></div>
+    </div>
+  </section>
+
+  <section id="fundas">
+    <h2>Diseño de Fundas</h2>
+    <div class="grid">
+      <div class="card"><img src="https://images.unsplash.com/photo-1603313011108-4dbaee88a4e?auto=format&fit=crop&w=500&q=85" alt="Funda protectora para iPhone"><p>Funda iPhone</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=500&q=85" alt="Funda protectora para Samsung"><p>Funda Samsung</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=500&q=85" alt="Funda protectora para Xiaomi"><p>Funda Xiaomi</p></div>
+    </div>
+  </section>
+
+
+
+  <section id="chat">
+    <h2>Chat con IA</h2>
+    <div class="chat-box">
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Persona usando un chat en un teléfono" style="width:100%; max-height:220px; object-fit:cover; border-radius:8px;">
+      <p>Bienvenido al chat de Next Phone. Pregunta lo que quieras sobre nuestros productos.</p>
+      <input type="text" placeholder="Escribe tu mensaje..." style="width:80%; padding:8px;">
+      <button>Enviar</button>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="card" style="max-width:650px; margin:0 auto 20px;">
+      <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=85" alt="Atención al cliente en una tienda" style="height:220px; object-fit:cover;">
+      <p>Estamos aquí para ayudarte con tus celulares y accesorios.</p>
+    </div>
+    <p>Teléfono: <a href="tel:31153808">31153808</a></p>
+    <p>Email: info@nextphone.com</p>
+    <p>Dirección: Carrera 3 #6-48, Barrio Bolívar, Yumbo</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Next Phone - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
+
